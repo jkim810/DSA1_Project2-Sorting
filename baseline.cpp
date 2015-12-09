@@ -116,7 +116,7 @@ bool compareStrings(Data *a, Data *b){
 int locateDecimal(Data *d){
   int i=20;
   while(d->data.at(i) != '.') {
-      i++;
+      i--;
   }
   return i;
 }
