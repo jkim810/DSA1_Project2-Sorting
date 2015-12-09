@@ -104,7 +104,6 @@ int main() {
 
 bool compareStrings(Data *d1, Data *d2);
 int locateDecimal(Data *d);
-int i = 20;
 
 bool compareStrings(Data *a, Data *b){
   if (locateDecimal(a)!=locateDecimal(b)){
@@ -115,7 +114,7 @@ bool compareStrings(Data *a, Data *b){
 }
 
 int locateDecimal(Data *d){
-  i=0;
+  int i=20;
   while(d->data.at(i) != '.') {
       i++;
   }
